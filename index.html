@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
+      <div class="container">
+        <a href="#" class="navbar-brand text-danger">Mahmoud</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainmenui"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainmenui">
+          <ul class="navbar-nav">
+            <li class="nav-items">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-house-door text-danger"></i> home</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-file-earmark-person text-danger"></i> about</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-telephone-forward text-danger"></i> contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input
+              class="
+                form-control
+                bg-dark
+                me-2
+                text-light
+                border-danger
+                btn-outline-danger
+              "
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger btn-danger text-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="bg-dark text-light p-5">
+      <div class="container">
+        <div class="d-sm-flex text-center text-sm-start">
+          <div>
+            <h1 class="display-5">
+              happy <span class="text-danger">new year</span>
+            </h1>
+            <p class="py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quam non velit harum sapiente molestiae numquam, magnam aliquid
+              consectetur placeat! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tempore quam non velit harum sapiente molestiae
+              numquam, magnam aliquid consectetur placeat!
+            </p>
+            <button class="btn btn-danger">read more</button>
+          </div>
+          <img
+            class="img-fluid w-50 w"
+            src="/images/undraw_new_year_2022_bxec (1).svg"
+            alt="undrow-img"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="carousel">
+      <div class="container">
+         <hr class="my-5">
+         <h1 class="mb-4">Carousel</h1>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="images/bg/bg1.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>First slide label</h5>
+               <p>Some representative placeholder content for the first slide.</p>
+               <div class="btn bg-danger text-light">
+                  view more
+               </div>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="images/bg/bg2.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Second slide label</h5>
+               <p>Some representative placeholder content for the second slide.</p>
+               <div class="btn bg-danger text-light">
+                  view more
+               </div>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="images/bg/bg3.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Third slide label</h5>
+               <p>Some representative placeholder content for the third slide.</p>
+               <div class="btn bg-danger text-light">
+                  view more
+               </div>
+             </div>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+    </section>
+    <section id="products" class="py-3">
+      <div class="container">
+         <hr class="my-5">
+         <h1 class="my-4">Products</h1>
+        <div class="row">
+          <div class="col-md-4 col-lg-3 col-6 mb-3 shadow-lg">
+            <div class="card bg-dark text-light rounded-4 overflow-hidden">
+              <img
+                src="images/products/product1.jpg"
+                class="card-img"
+                alt="card-img"
+              />
+              <div class="card-body py-3">
+                <h5 class="card-title">
+                  product1 <span class="badge bg-success">New</span>
+                </h5>
+                <p class="card-texy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque adipisci modi quaerat?
+                </p>
+                <button class="btn btn-danger">pay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-6 mb-3 shadow-lg">
+            <div class="card bg-dark text-light rounded-4 overflow-hidden">
+              <img
+                src="images/products/product2.jpg"
+                class="card-img"
+                alt="card-img"
+              />
+              <div class="card-body py-3">
+                <h5 class="card-title">product2</h5>
+                <p class="card-texy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque adipisci modi quaerat?
+                </p>
+                <button class="btn btn-danger">pay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-6 mb-3 shadow-lg">
+            <div class="card bg-dark text-light rounded-4 overflow-hidden">
+              <img
+                src="images/products/product3.jpg"
+                class="card-img"
+                alt="card-img"
+              />
+              <div class="card-body py-3">
+                <h5 class="card-title">
+                  product3 <span class="badge bg-success">New</span>
+                </h5>
+                <p class="card-texy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque adipisci modi quaerat?
+                </p>
+                <button class="btn btn-danger">pay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-6 mb-3 shadow-lg">
+            <div class="card bg-dark text-light rounded-4 overflow-hidden">
+              <img
+                src="images/products/product4.jpg"
+                class="card-img"
+                alt="card-img"
+              />
+              <div class="card-body py-3">
+                <h5 class="card-title">product4</h5>
+                <p class="card-texy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque adipisci modi quaerat?
+                </p>
+                <button class="btn btn-danger">pay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-danger">read more products</button>
+      </div>
+    </section>
+    <div id="form-contact">
+       <div class="container">
+          <hr class="my-5">
+          <h1>contact us</h1>
+         <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label"><i class="bi bi-envelope text-danger"></i> Email</label>
+              <input type="email" class="form-control bg-dark btn-outline-danger" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label"><i class="bi bi-lock text-danger"></i> Password</label>
+              <input type="password" class="form-control bg-dark btn-outline-danger" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label"><i class="bi bi-house text-danger"></i> Address</label>
+              <input type="text" class="form-control bg-dark btn-outline-danger" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control bg-dark btn-outline-danger" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select bg-dark btn-outline-danger">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control bg-dark btn-outline-danger" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input bg-dark btn-outline-danger" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger">Sign in</button>
+            </div>
+          </form>
+       </div>
+    </div>
+    <div class="container">
+      <hr class="my-5">
+      <footer class="py-5">
+         <div class="row">
+           <div class="col-2">
+             <h5>Section</h5>
+             <ul class="nav flex-column">
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+             </ul>
+           </div>
+     
+           <div class="col-2">
+             <h5>Section</h5>
+             <ul class="nav flex-column">
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+             </ul>
+           </div>
+     
+           <div class="col-2">
+             <h5>Section</h5>
+             <ul class="nav flex-column">
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+             </ul>
+           </div>
+     
+           <div class="col-4 offset-1">
+             <form>
+               <h5>Subscribe to our newsletter</h5>
+               <p>Monthly digest of whats new and exciting from us.</p>
+               <div class="d-flex w-100 gap-2">
+                 <label for="newsletter1" class="visually-hidden">Email address</label>
+                 <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                 <button class="btn btn-primary" type="button">Subscribe</button>
+               </div>
+             </form>
+           </div>
+         </div>
+     
+         <div class="d-flex justify-content-between py-4 my-4 border-top">
+           <p>© 2021 Mahmoud Abu-Attiya, Inc. All rights reserved.</p>
+           <ul class="list-unstyled d-flex">
+             <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook text-danger"></i></a></li>
+             <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter text-danger"></i></a></li>
+             <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram text-danger"></i></a></li>
+           </ul>
+         </div>
+       </footer>
+    </div>
+  </body>
+</html>
